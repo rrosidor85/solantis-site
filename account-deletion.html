@@ -2,133 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delete Your Account · Solantis</title>
-<meta name="description" content="How to delete your Solantis account and all associated data.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://solantis.health/account-deletion.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solantis — Delete Your Account</title>
 <style>
-  :root{
-    --teal:#0f766e; --teal-dark:#115e59; --ink:#1f2937; --muted:#6b7280;
-    --line:#e5e7eb; --bg:#ffffff; --soft:#f0fdfa;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.65; font-size:17px;
-  }
-  a{color:var(--teal); text-decoration:none}
-  a:hover{text-decoration:underline}
-  header.site{border-bottom:1px solid var(--line); background:var(--bg)}
-  .wrap{max-width:760px; margin:0 auto; padding:0 24px}
-  header.site .wrap{display:flex; align-items:center; gap:10px; height:64px}
-  .brand{display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; color:var(--ink)}
-  .brand .mark{
-    width:30px; height:30px; border-radius:8px; flex:0 0 auto;
-    background:linear-gradient(135deg,#14b8a6,#0f766e);
-    display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px;
-  }
-  main{padding:48px 0 16px}
-  h1{font-size:34px; line-height:1.2; margin:0 0 6px}
-  .sub{color:var(--muted); font-size:16px; margin:0 0 32px}
-  h2{font-size:21px; margin:34px 0 10px; color:var(--teal-dark)}
-  p{margin:0 0 16px}
-  ul{margin:0 0 16px; padding-left:22px}
-  li{margin:0 0 10px}
-  ol.steps{margin:0 0 16px; padding-left:22px}
-  ol.steps li{margin:0 0 12px}
-  .card{
-    background:var(--soft); border:1px solid #99f6e4; border-radius:12px;
-    padding:18px 20px; margin:0 0 24px;
-  }
-  .card h3{margin:0 0 8px; font-size:17px; color:var(--teal-dark)}
-  .card p:last-child, .card ol:last-child, .card ul:last-child{margin-bottom:0}
-  .note{
-    background:#fffbeb; border:1px solid #fde68a; border-radius:12px;
-    padding:16px 18px; margin:0 0 24px;
-  }
-  .note p{margin:0}
-  code{background:#f3f4f6; padding:2px 6px; border-radius:6px; font-size:0.92em}
-  footer.site{
-    border-top:1px solid var(--line); margin-top:48px; padding:28px 0 56px;
-    color:var(--muted); font-size:14px;
-  }
-  footer.site .links{display:flex; flex-wrap:wrap; gap:18px; margin-bottom:12px}
-  @media (max-width:520px){
-    body{font-size:16px}
-    h1{font-size:28px}
-    main{padding:32px 0 8px}
-  }
+  :root { --teal:#2A9D8F; --ink:#1f2937; --muted:#6b7280; --bg:#f8fafc; --card:#ffffff; }
+  * { box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); margin:0; line-height:1.6; }
+  .wrap { max-width:780px; margin:0 auto; padding:32px 20px 80px; }
+  header.top { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  header.top .logo { width:40px; height:40px; border-radius:10px; background:var(--teal); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:20px; }
+  h1 { font-size:30px; margin:18px 0 4px; }
+  .meta { color:var(--muted); font-size:14px; margin-bottom:24px; }
+  .card { background:var(--card); border:1px solid #e5e7eb; border-radius:14px; padding:22px 24px; margin-bottom:16px; }
+  h2 { font-size:20px; color:var(--teal); margin:0 0 10px; }
+  p { margin:0 0 12px; }
+  ul { margin:0 0 12px; padding-left:22px; }
+  li { margin:4px 0; }
+  a { color:var(--teal); }
+  footer { color:var(--muted); font-size:13px; margin-top:28px; text-align:center; }
+  footer a { margin:0 8px; }
 </style>
 </head>
 <body>
-<header class="site">
   <div class="wrap">
-    <a class="brand" href="/">
-      <span class="mark">✦</span>
-      <span>Solantis</span>
-    </a>
-  </div>
-</header>
-
-<main>
-  <div class="wrap">
+    <header class="top"><div class="logo">✱</div><strong>Solantis</strong></header>
     <h1>Delete Your Account</h1>
-    <p class="sub">You can permanently delete your Solantis: Senior Care &amp; Safety account and all associated data at any time, using either method below.</p>
-
-    <div class="card">
-      <h3>Option 1 — Delete in the app (fastest)</h3>
-      <ol class="steps">
-        <li>Open the <strong>Solantis</strong> app and sign in.</li>
-        <li>Go to <strong>Profile</strong>.</li>
-        <li>Tap <strong>App Settings</strong>.</li>
-        <li>Tap <strong>Delete Account</strong> and confirm.</li>
-      </ol>
-      <p>Your account and associated data are permanently removed once you confirm.</p>
-    </div>
-
-    <div class="card">
-      <h3>Option 2 — Request by email</h3>
-      <p>Email <a href="mailto:robinsonrosidor@gmail.com?subject=Account%20Deletion%20Request">robinsonrosidor@gmail.com</a> from the email address on your account, with the subject line <strong>"Account Deletion Request."</strong> We will verify your identity and delete your account.</p>
-    </div>
-
-    <h2>What gets deleted</h2>
-    <p>When your account is deleted, we permanently remove:</p>
-    <ul>
-      <li>Your account and profile (name, email, phone number)</li>
-      <li>Care recipient profiles and Care Team associations</li>
-      <li>Medications, schedules, adherence history, and vital signs</li>
-      <li>Photos and documents uploaded to the Document Vault</li>
-      <li>All other personal and health data associated with your account</li>
-    </ul>
-
-    <h2>Data we may retain</h2>
-    <p>We may retain a limited set of records where required by law (for example, transaction or tax records related to subscriptions). Any such records are kept only as long as legally required and are not used for any other purpose.</p>
-
-    <h2>Timing</h2>
-    <p>Account deletion begins immediately upon confirmation. All personal and health data is permanently removed from our systems within 30 days.</p>
-
-    <div class="note">
-      <p><strong>Note about subscriptions:</strong> Deleting your account does not automatically cancel an active App Store subscription. To cancel, open <strong>Settings &gt; [your name] &gt; Subscriptions</strong> on your iPhone (or the App Store &gt; account &gt; Subscriptions), select Solantis, and cancel. Subscriptions are billed and managed by Apple.</p>
-    </div>
-
-    <h2>Questions</h2>
-    <p>If you need help with account deletion, contact us at <a href="mailto:robinsonrosidor@gmail.com">robinsonrosidor@gmail.com</a>.</p>
+    <p class="meta">Last updated: December 30, 2025</p>
+    <section class="card">
+      <h2>How to Delete Your Account</h2>
+      <p>You can permanently delete your Solantis account and associated data at any time:</p>
+<p><strong>In the app (recommended):</strong><br>• Open Solantis and sign in<br>• Go to Profile → Privacy &amp; Security → Delete Account<br>• Confirm — your account and the data you own are permanently removed</p>
+<p><strong>By email:</strong><br>If you can no longer access the app, email privacy@solantis.health from your account's email address and we will process the deletion for you.</p>
+    </section>
+    <section class="card">
+      <h2>What Gets Deleted</h2>
+      <p>Deleting your account permanently removes:<br>• Your account profile (name, email, phone)<br>• Care recipients you own and their records — medications, dose logs, vitals, allergies, hospital visits, and health-timeline events<br>• Documents and photos you uploaded<br>• Chat messages you sent and your care-team memberships</p>
+    </section>
+    <section class="card">
+      <h2>What May Be Retained</h2>
+      <p>We retain only the minimum data required by law (for example, records needed for security, fraud prevention, or legal/regulatory compliance), as described in our Privacy Policy. Retained data is not used for any other purpose and is removed once it is no longer legally required.</p>
+    </section>
+    <section class="card">
+      <h2>Timeline</h2>
+      <p>Deletion requests are processed promptly and completed within 30 days.</p>
+    </section>
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions about deleting your account or data? Email privacy@solantis.health.</p>
+    </section>
+    <footer>
+      <a href="./privacy.html">Privacy Policy</a> ·
+      <a href="./terms.html">Terms of Service</a> ·
+      <a href="./account-deletion.html">Delete Account</a>
+    </footer>
   </div>
-</main>
-
-<footer class="site">
-  <div class="wrap">
-    <div class="links">
-      <a href="/">Home</a>
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/account-deletion.html">Account Deletion</a>
-      <a href="mailto:robinsonrosidor@gmail.com">Contact</a>
-    </div>
-    <div>© 2026 Solantis. All rights reserved.</div>
-  </div>
-</footer>
 </body>
 </html>
