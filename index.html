@@ -518,9 +518,44 @@
     .hero-cta { flex-direction: column; align-items: center; }
     section { padding: 64px 20px; }
   }
+
+  /* TOP NAV (added) */
+  .topnav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid #e7ecef; }
+  .topnav .bar { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; }
+  .topnav .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--dark); font-family:'DM Serif Display',serif; font-weight:700; font-size:1.25rem; }
+  .topnav .brand .nmark { width:30px; height:30px; border-radius:8px; background:var(--teal); position:relative; }
+  .topnav .brand .nmark::before, .topnav .brand .nmark::after { content:''; position:absolute; background:#fff; border-radius:1px; }
+  .topnav .brand .nmark::before { width:4px; height:16px; left:13px; top:7px; }
+  .topnav .brand .nmark::after { height:4px; width:16px; top:13px; left:7px; }
+  .topnav nav a { margin-left:20px; text-decoration:none; color:var(--gray); font-weight:600; font-size:0.95rem; }
+  .topnav nav a:hover { color:var(--teal-dark); }
+  .topnav nav a.navcta { color:var(--teal-dark); }
+
+  /* CAREGIVER GUIDES (added) */
+  .guides-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:24px; margin-top:48px; }
+  .guide-card { display:block; text-decoration:none; color:inherit; background:var(--white); border:1px solid #eef1f3; border-radius:16px; padding:26px; transition:all .2s ease; }
+  .guide-card:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(42,157,143,.10); border-color:var(--teal-light); }
+  .guide-card .gtag { font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--teal); }
+  .guide-card h3 { font-size:1.12rem; margin:8px 0 8px; color:var(--dark); }
+  .guide-card p { color:var(--gray); font-size:.93rem; line-height:1.6; }
+  .more-link { text-align:center; margin-top:36px; }
+  .more-link a { color:var(--teal-dark); font-weight:600; text-decoration:none; }
+  @media (max-width:768px){ .guides-grid{ grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="bar">
+    <a class="brand" href="/"><span class="nmark"></span> Solantis</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="/resources.html">Resources</a>
+      <a class="navcta" href="https://apps.apple.com/us/app/solantis-senior-care-safety/id6756217162" target="_blank" rel="noopener">Download</a>
+    </nav>
+  </div>
+</header>
 
 <!-- HERO -->
 <section class="hero">
@@ -719,6 +754,34 @@
         <p style="margin-top:12px; color:var(--gray); line-height:1.65;">Yes. Solantis offers medication reminders, drug-interaction checks, vital tracking, and family care coordination completely free, with no limit on the number of medications you can track. It's built for families who want a free, all-in-one alternative to single-purpose pill reminder apps.</p>
       </details>
     </div>
+  </div>
+</section>
+
+<!-- CAREGIVER GUIDES (added) -->
+<section class="guides" id="guides" style="background:var(--white);">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label">Caregiver Resources</div>
+      <h2 class="section-title">Free Guides for Family Caregivers</h2>
+    </div>
+    <div class="guides-grid">
+      <a class="guide-card" href="/medication-management-for-elderly-parents.html">
+        <div class="gtag">Medication Safety</div>
+        <h3>How to Manage Medications for Elderly Parents</h3>
+        <p>A six-step system for keeping doses on track — lists, reminders, interactions, and refills.</p>
+      </a>
+      <a class="guide-card" href="/free-medication-reminder-app.html">
+        <div class="gtag">App Guide</div>
+        <h3>The Best Free Medication Reminder Apps</h3>
+        <p>The features that matter, where free plans fall short, and how to pick one your parent will use.</p>
+      </a>
+      <a class="guide-card" href="/senior-benefits-guide.html">
+        <div class="gtag">Benefits</div>
+        <h3>Senior Benefits You Might Be Missing</h3>
+        <p>Billions in Medicare, SNAP, and prescription help go unclaimed. Find what your parent qualifies for.</p>
+      </a>
+    </div>
+    <div class="more-link"><a href="/resources.html">Browse all caregiver guides →</a></div>
   </div>
 </section>
 
